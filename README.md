@@ -1,11 +1,9 @@
-<h1 id="readme-top">gtw mls pgn beli trek</h1>
+<h1 id="readme-top">webset yang semoga gabakal mangkrak ygy</h1>
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
     <img src="assets/logo.png" alt="Logo">
-  </a>
 
   <p align="center">
   YAUDAHLAH YAH SEADANYA
