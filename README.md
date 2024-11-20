@@ -47,6 +47,7 @@ website dibikin kayak landing page aja yang dimana :
 
 <p>me after get revisi untuk 89345797xnya : </p>
 <img src="./markdown-img/gtw.jpg">
+cape gw kak, ren
 
 [Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
 [Bootstrap-url]: https://getbootstrap.com
