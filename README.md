@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-    <img src="assets/logo.png" alt="Logo">
+    <img src="assets/LOGO.png" alt="Logo" style="width:100%;object-fit:contain;">
 
   <p align="center">
   YAUDAHLAH YAH SEADANYA
