@@ -108,9 +108,42 @@
                     </div>
                 </div>
             </div>
+
+            <!-- sponsorship -->
+            <div class="container-fluid" style="padding: 130px 0 80px 0;">
+                <div class="row mx-5">
+                    <!-- content -->
+                    <div class="col-lg-3 col-md-6 col-sm 6 col-12 mb-5">
+                        <div class="d-flex justify-content-center">
+                            <img style="object-fit: contain; padding: 0 15px; box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.055); border-radius: 20px;"
+                                src="assets/markdown-img/image 29.png" height="80" width="220" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm 6 col-12 mb-5">
+                        <div class="d-flex justify-content-center">
+                            <img style="object-fit: contain; padding: 0 15px; box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.055); border-radius: 20px;"
+                                src="assets/markdown-img/image 28.png" height="80" width="220" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm 6 col-12 mb-5">
+                        <div class="d-flex justify-content-center">
+                            <img style="object-fit: contain; padding: 0 15px; box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.055); border-radius: 20px;"
+                                src="assets/markdown-img/image 30.png" height="80" width="220" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm 6 col-12 mb-5">
+                        <div class="d-flex justify-content-center">
+                            <img style="object-fit: contain;  padding: 0 15px; box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.055); border-radius: 20px;"
+                                src="assets/markdown-img/image 31.png" height="80" width="220" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
+
         <style>
+            /* button gradient */
             .m_button i {
                 transition: ease 300ms all;
             }
@@ -118,6 +151,30 @@
             .m_button:hover i {
                 transition: ease 300ms all;
                 padding-left: 10px;
+            }
+
+            .m_button {
+                transition: 1.5s ease;
+                position: relative;
+                z-index: 1;
+            }
+
+            .m_button::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(90deg, rgba(203, 108, 230, 1) 35%, rgba(254, 199, 37, 1) 100%);
+                opacity: 0;
+                z-index: -1;
+                border-radius: 10px;
+                transition: opacity 500ms ease;
+            }
+
+            .m_button:hover::before {
+                opacity: 1;
             }
 
             @media screen and (max-width: 767px) {
@@ -131,35 +188,79 @@
     <!-- ----------------------------------------------------------------------- -->
     <!--                                PROGRAMS                                 -->
     <!-- ----------------------------------------------------------------------- -->
-    <section class="section_background d-flex py-5">
+    <section class="section_background d-flex pb-5">
         <div class="container-fluid mx-5">
             <!-- TITLE -->
-            <div class="mb-5">
-                <h5 style="color: #cb6ce6; font-weight: 600;">DESTINASI FAVORIT</h5>
-                <h1 style="font-weight: 700;">✈️ <span style="font-size: 1.8rem;">•</span> Temukan Destinasi Favoritmu
-                </h1>
+            <div class="mb-5 d-flex justify-content-between align-items-center">
+                <div>
+                    <h5 style="color: #cb6ce6; font-weight: 600;">DESTINASI FAVORIT</h5>
+                    <h1 style="font-weight: 700;">✈️ <span style="font-size: 1.8rem;">•</span> Temukan Destinasi
+                        Favoritmu
+                    </h1>
+                </div>
+                <a href="" class="p-0 m-0 chev" style="text-decoration: none; font-weight: 500;">Lihat Semua <i
+                        class="ms-2 fa-solid fa-chevron-right"></i></a>
             </div>
             <!-- WRAP -->
             <div class="row">
 
                 <!-- CONTENT -->
-                <div class="col-lg-3 col-md-6 position-relative p-0 m-0 mb-3 overflow-hidden"
-                    style="border-radius: 10px;">
-                    <a href="" class="programs_content">
-                        <img src="assets/markdown-img/img2.jpg"
-                            style="height: 480px; width: 100%; object-fit: cover;  border-radius: 10px;">
-                        <div class="position-absolute p-3"
-                            style="max-width: 300px; border-radius: 0 10px 0 10px; bottom: 0; background-color: rgba(255, 255, 255, 0.613); backdrop-filter: blur(3.0px);">
-                            <h5 class="p-0 m-0 text-black" style="font-weight: 600;">Raja Ampat </h5>
-                            <p class="p-0 m-0" style="font-weight: 500; color: rgb(90, 90, 90);">Bali</p>
-                        </div>
-                    </a>
+                <div class="col-lg-3 col-md-6">
+                    <div class="position-relative mb-3 overflow-hidden" style="border-radius: 10px;">
+                        <a href="" class="programs_content">
+                            <img src="assets/markdown-img/img2.jpg"
+                                style="height: 480px; width: 100%; object-fit: cover;  border-radius: 10px;">
+                            <div class="position-absolute p-3"
+                                style="max-width: 300px; border-radius: 0 10px 0 10px; bottom: 0; background-color: rgba(255, 255, 255, 0.613); backdrop-filter: blur(3.0px);">
+                                <h5 class="p-0 m-0 text-black" style="font-weight: 600;">Raja Ampat </h5>
+                                <p class="p-0 m-0" style="font-weight: 500; color: rgb(90, 90, 90);">Bali</p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-
+                <div class="col-lg-3 col-md-6">
+                    <div class="position-relative mb-3 overflow-hidden" style="border-radius: 10px;">
+                        <a href="" class="programs_content">
+                            <img src="assets/markdown-img/image 4.png"
+                                style="height: 480px; width: 100%; object-fit: cover;  border-radius: 10px;">
+                            <div class="position-absolute p-3"
+                                style="max-width: 300px; border-radius: 0 10px 0 10px; bottom: 0; background-color: rgba(255, 255, 255, 0.613); backdrop-filter: blur(3.0px);">
+                                <h5 class="p-0 m-0 text-black" style="font-weight: 600;">Raja Ampat </h5>
+                                <p class="p-0 m-0" style="font-weight: 500; color: rgb(90, 90, 90);">Bali</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="position-relative mb-3 overflow-hidden" style="border-radius: 10px;">
+                        <a href="" class="programs_content">
+                            <img src="assets/markdown-img/img2.jpg"
+                                style="height: 480px; width: 100%; object-fit: cover;  border-radius: 10px;">
+                            <div class="position-absolute p-3"
+                                style="max-width: 300px; border-radius: 0 10px 0 10px; bottom: 0; background-color: rgba(255, 255, 255, 0.613); backdrop-filter: blur(3.0px);">
+                                <h5 class="p-0 m-0 text-black" style="font-weight: 600;">Raja Ampat </h5>
+                                <p class="p-0 m-0" style="font-weight: 500; color: rgb(90, 90, 90);">Bali</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="position-relative mb-3 overflow-hidden" style="border-radius: 10px;">
+                        <a href="" class="programs_content">
+                            <img src="assets/markdown-img/image 4.png"
+                                style="height: 480px; width: 100%; object-fit: cover;  border-radius: 10px;">
+                            <div class="position-absolute p-3"
+                                style="max-width: 300px; border-radius: 0 10px 0 10px; bottom: 0; background-color: rgba(255, 255, 255, 0.613); backdrop-filter: blur(3.0px);">
+                                <h5 class="p-0 m-0 text-black" style="font-weight: 600;">Raja Ampat </h5>
+                                <p class="p-0 m-0" style="font-weight: 500; color: rgb(90, 90, 90);">Bali</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
-
         <style>
+            /* zoom img */
             .programs_content img {
                 transition: ease 300ms all;
             }
@@ -167,6 +268,82 @@
             .programs_content:hover img {
                 scale: 1.2;
                 transition: ease 300ms all;
+            }
+
+            /* lihat semua */
+            .chev {
+                color: #cb6ce6;
+            }
+
+            .chev i {
+                transition: ease 500ms all;
+            }
+
+            .chev:hover i {
+                transform: rotate(90deg);
+                transition: ease 500ms all;
+            }
+        </style>
+    </section>
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                               PENDAFTARAN                               -->
+    <!-- ----------------------------------------------------------------------- -->
+    <section class="section_background">
+        <div class="container-fluid py-5">
+            <div class="row mx-5">
+
+                <!-- Contain Text -->
+                <div class="col-lg-6 d-flex flex-column justify-content-center">
+                    <div class="d-flex flex-wrap">
+                        <h5 style="color: #cb6ce6; font-weight: 600;">RESERVASI TEMPAT</h5>
+                    </div>
+                    <h1 style="font-size: 3.0rem; font-weight: 700; max-width: 600px;">Gak mau ngantri? reservasi aja!
+                        🤙🏻</h1>
+                    <div>
+                        <div class="d-flex mt-5 mk_desk">
+                            <div class="dev_sponsor_box"><div class="icon">🔍</div></div>
+                            <div class="ms-4">
+                                <h5 class="p-0 m-0" style="font-size: 1.3rem; font-weight: 600; color: grey;">Cari
+                                    tempat yang kamu mau</h5>
+                                <p class="p-0 m-0"
+                                    style="max-width: 400px; font-size: 1.0rem; font-weight: 400; color: rgb(175, 175, 175);">
+                                    Temukan destinasi selanjutnya yang akan kamu kunjungi dengan Destinize</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mt-5 mk_desk">
+                            <div class="dev_sponsor_box"><div class="icon">✏️</div></div>
+                            <div class="ms-4">
+                                <h5 class="p-0 m-0" style="font-size: 1.3rem; font-weight: 600; color: grey;">Isi data dan konfirmasi pembayaran</h5>
+                                <p class="p-0 m-0"
+                                    style="max-width: 400px; font-size: 1.0rem; font-weight: 400; color: rgb(175, 175, 175);">
+                                    Tulis dan lengkapi data kamu untuk keperluan data booking</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mt-5 mk_desk">
+                            <div class="dev_sponsor_box"><div class="icon">😍</div></div>
+                            <div class="ms-4">
+                                <h5 class="p-0 m-0" style="font-size: 1.3rem; font-weight: 600; color: grey;">Tinggal masuk dan enjoy!</h5>
+                                <p class="p-0 m-0"
+                                    style="max-width: 400px; font-size: 1.0rem; font-weight: 400; color: rgb(175, 175, 175);">
+                                    Kamu bisa langsung masuk dan enjoy liburan kamu tanpa hambatan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contain Img -->
+                <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                    <img class="img_reg" src="assets/markdown-img/Image.png" width="660">
+                </div>
+            </div>
+        </div>
+
+        <style>
+            @media screen and (max-width: 767px) {
+                .img_reg {
+                    display: none;
+                }
             }
         </style>
     </section>

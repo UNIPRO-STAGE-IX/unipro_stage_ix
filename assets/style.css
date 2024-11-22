@@ -35,6 +35,7 @@ body, html {
     width: 100%;
     backdrop-filter: blur(8px);
     transition: ease 0.4s;
+    z-index: 5;
 }
 
 .navbar-hide {
@@ -84,4 +85,25 @@ body, html {
 .section_background {
     height: auto;
     background-color: rgba(244, 245, 247, 1);
+}
+
+/* SPONSOR */
+.dev_sponsor_box {
+    background-color: #fec725;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease 500ms all;
+}
+
+.dev_sponsor_box .icon {
+    transition: ease 500ms all;
+}
+
+.mk_desk:hover .icon {
+    transform: rotate(360deg);
 }
